@@ -49,9 +49,10 @@ set complete-=i
 
 
 "These next three lines are for the fuzzy search:
-set nocompatible      "Limit search to your project
-set path+=**          "Search all subdirectories and recursively
-set wildmenu          "Shows multiple matches on one line
+set nocompatible      "Limit search to your project, also prevents character insertion on pressing arrow keys.
+set showmode          "Used to show insert and command mode in bottom bar.
+set path+=**          "Search all subdirectories and recursively.
+set wildmenu          "Shows multiple matches on one line.
 
 " alias for vimgrep
 command -nargs=1 VG vimgrep /<args>/ **/*
